@@ -183,14 +183,16 @@ body {
   .proof-country .grid-list {
     display: grid;
     grid-template-columns: repeat(5, 224px);
-    gap: 20px; }
+    gap: 20px;
+    margin-top: 50px; }
     .proof-country .grid-list .item {
-      height: 147px;
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 147px;
       border-radius: 8px;
-      position: relative; }
+      overflow: hidden; }
       .proof-country .grid-list .item span {
         color: var(--white);
         z-index: 10;
@@ -203,9 +205,8 @@ body {
         top: 0;
         right: 0;
         bottom: 0;
-        left: 0; }
-        .proof-country .grid-list .item .background-image img {
-          filter: brightness(70%); }
+        left: 0;
+        filter: brightness(70%); }
 
 .img-fluid {
   width: 100%;
