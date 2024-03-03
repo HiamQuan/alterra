@@ -51,7 +51,6 @@ body {
         .first-line {
             font-size: 90px;
             font-family: $fontInter;
-            line-height: 108.92px;
             span {
                 font-size: 50px;
                 line-height: 39.84px;
@@ -83,7 +82,7 @@ body {
     }
 }
 
-.mission-and-bussiness {
+.mission-and-business {
     display: grid;
     grid-template-columns: 46% auto;
     gap: 180px;
