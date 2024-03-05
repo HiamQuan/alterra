@@ -34,8 +34,7 @@ body {
     max-width: 530px; }
     .banner .logo .first-line {
       font-size: 90px;
-      font-family: "Inter", sans-serif;
-      line-height: 108.92px; }
+      font-family: "Inter", sans-serif; }
       .banner .logo .first-line span {
         font-size: 50px;
         line-height: 39.84px; }
@@ -58,30 +57,30 @@ body {
     margin: 0 auto;
     height: auto; }
 
-.mission-and-bussiness {
+.mission-and-business {
   display: grid;
   grid-template-columns: 46% auto;
   gap: 180px; }
-  .mission-and-bussiness .left {
+  .mission-and-business .left {
     padding-bottom: 50px; }
-    .mission-and-bussiness .left .our-mission .title,
-    .mission-and-bussiness .left .our-business .title {
+    .mission-and-business .left .our-mission .title,
+    .mission-and-business .left .our-business .title {
       margin-top: 8px;
       font-size: 20px;
       font-weight: 700;
       line-height: 24px; }
-    .mission-and-bussiness .left .our-mission p,
-    .mission-and-bussiness .left .our-business p {
+    .mission-and-business .left .our-mission p,
+    .mission-and-business .left .our-business p {
       margin-top: 28px;
       font-size: 16px;
       line-height: 20px;
       padding-right: 5px; }
-      .mission-and-bussiness .left .our-mission p:last-child,
-      .mission-and-bussiness .left .our-business p:last-child {
+      .mission-and-business .left .our-mission p:last-child,
+      .mission-and-business .left .our-business p:last-child {
         margin-top: 25px; }
-    .mission-and-bussiness .left .our-business {
+    .mission-and-business .left .our-business {
       margin-top: 115px; }
-  .mission-and-bussiness .right .sticky-box {
+  .mission-and-business .right .sticky-box {
     position: sticky;
     top: 100px; }
 
@@ -355,5 +354,3 @@ body {
 
 .font-roboto {
   font-family: "Roboto", sans-serif; }
-
-/*# sourceMappingURL=style.css.map */
