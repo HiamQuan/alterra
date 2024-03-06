@@ -286,9 +286,6 @@ body {
 .cases {
     margin-top: 120px;
     .grid-list {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 25px;
         .item {
             margin-bottom: 10px;
             overflow: hidden;
@@ -323,9 +320,6 @@ body {
 .members {
     margin-top: 120px;
     .grid-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 7.916%;
         .item {
             padding: 28px 35px 40px 30px;
             border-radius: 16px;
