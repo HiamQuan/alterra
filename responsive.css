@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1300px) {
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
   .banner .logo .first-line {
     font-size: 5vw; }
     .banner .logo .first-line span {
@@ -9,7 +9,8 @@
       font-size: 2vw; }
 
   .container {
-    padding-left: 40px; }
+    padding-left: 40px;
+    padding-right: 40px; }
 
   .mission-and-business {
     grid-template-columns: calc(100% - 450px) auto;
@@ -32,7 +33,7 @@
     .proof-country .grid-list {
       margin-top: 10px;
       grid-template-columns: 1fr 1fr 1fr; } }
-@media only screen and (min-width: 389px) and (max-width: 899px) {
+@media only screen and (min-width: 374px) and (max-width: 899px) {
   .banner .logo .first-line {
     font-size: 7vw; }
     .banner .logo .first-line span {
@@ -44,9 +45,11 @@
       font-size: 3vw; }
 
   .container {
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-right: 20px; }
 
   .mission-and-business {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 0px; }
 
@@ -130,3 +133,5 @@
     .proof-country .grid-list {
       margin-top: 10px;
       grid-template-columns: 1fr 1fr; } }
+
+/*# sourceMappingURL=responsive.css.map */
