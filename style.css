@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "YuGothic";
-  src: url("/fonts/yu-gothic.ttf"); }
+  src: url("../fonts/yu-gothic.ttf"); }
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@
     border-width: 0; }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", sans-serif !important;
   font-weight: 400;
   color: #000000;
   margin: 0; }
@@ -34,7 +34,8 @@ body {
     max-width: 530px; }
     .banner .logo .first-line {
       font-size: 90px;
-      font-family: "Inter", sans-serif; }
+      font-family: "Inter", sans-serif;
+      line-height: 108.92px; }
       .banner .logo .first-line span {
         font-size: 50px;
         line-height: 39.84px; }
@@ -60,7 +61,7 @@ body {
 .mission-and-business {
   display: grid;
   grid-template-columns: 46% auto;
-  gap: 180px; }
+  gap: 10vw; }
   .mission-and-business .left {
     padding-bottom: 50px; }
     .mission-and-business .left .our-mission .title,
@@ -87,7 +88,7 @@ body {
 .business-modules {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 138px;
+  gap: 11.5%;
   margin-top: 26px; }
   .business-modules .item {
     text-align: center; }
@@ -279,7 +280,7 @@ body {
   .members .grid-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 95px; }
+    gap: 7.916%; }
     .members .grid-list .item {
       padding: 28px 35px 40px 30px;
       border-radius: 16px;
@@ -292,8 +293,8 @@ body {
           border-radius: 50%;
           overflow: hidden;
           box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          max-width: 80px;
-          max-height: 80px; }
+          width: 80px;
+          height: 80px; }
         .members .grid-list .item .profile-row .information {
           display: flex;
           flex-direction: column;
@@ -309,18 +310,123 @@ body {
             font-size: 20px;
             line-height: 24.2px; }
       .members .grid-list .item .description {
+        margin-top: 23px;
         font-weight: 400;
         font-size: 18px;
         line-height: 27px; }
 
-@media only screen and (max-width: 376px) {
-  .mission-and-bussiness {
-    display: flex;
-    flex-direction: column; }
+.news {
+  margin-top: 120px; }
+  .news .grid-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.333%; }
+    .news .grid-list .item {
+      position: relative;
+      margin-top: 50px; }
+      .news .grid-list .item::before {
+        position: absolute;
+        top: -10px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1.6px;
+        background-color: #000000;
+        content: ""; }
+      .news .grid-list .item .created-at {
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        font-size: 16px !important;
+        font-family: "YuGothic" !important;
+        font-weight: 700 !important;
+        margin-bottom: 20px; }
+        .news .grid-list .item .created-at span {
+          font-size: 10px; }
+      .news .grid-list .item .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 13px; }
+        .news .grid-list .item .content .cover {
+          border-radius: 8px;
+          overflow: hidden;
+          max-width: 70px; }
+        .news .grid-list .item .content .main-content .title {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 18px; }
+        .news .grid-list .item .content .link {
+          margin-left: 20px;
+          vertical-align: middle; }
+          .news .grid-list .item .content .link span {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 5px;
+            color: var(--white-v2);
+            border-radius: 50%;
+            background: var(--black);
+            vertical-align: middle; }
+            .news .grid-list .item .content .link span a {
+              font-weight: 200;
+              font-size: 25px;
+              color: inherit;
+              text-decoration: none; }
+      .news .grid-list .item:first-of-type {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 25px; }
+        .news .grid-list .item:first-of-type::before {
+          position: absolute;
+          top: -20px;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 1.6px;
+          background-color: #000000;
+          content: ""; }
+        .news .grid-list .item:first-of-type .content {
+          display: grid;
+          grid-template-columns: 280px auto 210px;
+          gap: 35px; }
+          .news .grid-list .item:first-of-type .content .cover {
+            border-radius: 8px;
+            overflow: hidden;
+            width: 280px;
+            max-width: 280px; }
+          .news .grid-list .item:first-of-type .content .main-content {
+            align-self: flex-start;
+            padding-top: 10px; }
+            .news .grid-list .item:first-of-type .content .main-content .title {
+              font-size: 25px;
+              font-weight: 700;
+              line-height: 28px; }
+            .news .grid-list .item:first-of-type .content .main-content .description {
+              margin-top: 28px;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 27px; }
+          .news .grid-list .item:first-of-type .content .link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: 0;
+            vertical-align: middle; }
+            .news .grid-list .item:first-of-type .content .link span {
+              max-width: 63px;
+              max-height: 63px;
+              display: flex;
+              justify-content: center;
+              align-items: flex-start;
+              padding: 5px;
+              font-weight: 200;
+              font-size: 53px;
+              color: var(--white-v2);
+              border-radius: 50%;
+              background: var(--black);
+              vertical-align: middle; }
 
-  .business-modules {
-    display: flex;
-    flex-direction: column; } }
 .img-fluid {
   width: 100%;
   height: auto; }
