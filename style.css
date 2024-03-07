@@ -35,8 +35,7 @@ body {
     max-width: 530px; }
     .banner .logo .first-line {
       font-size: 90px;
-      font-family: "Inter", sans-serif;
-      line-height: 108.92px; }
+      font-family: "Inter", sans-serif; }
       .banner .logo .first-line span {
         font-size: 50px;
         line-height: 39.84px; }
@@ -249,72 +248,64 @@ body {
 
 .cases {
   margin-top: 120px; }
-  .cases .grid-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px; }
-    .cases .grid-list .item {
-      margin-bottom: 10px;
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: rgba(40, 40, 40, 0.148) 4px 3px 4px 0px, var(--white) -5px -5px 16px 0px; }
-      .cases .grid-list .item .content {
-        padding: 10px 25px 22px 18px; }
-        .cases .grid-list .item .content .title {
-          font-weight: 700;
-          font-size: 13px;
-          line-height: 15.23px;
-          letter-spacing: 0; }
-          .cases .grid-list .item .content .title span {
-            font-weight: 600; }
-        .cases .grid-list .item .content .text {
-          margin-top: 19px;
-          font-weight: 500;
-          font-size: 12px;
-          line-height: 20px; }
-          .cases .grid-list .item .content .text span {
-            font-weight: 400;
-            font-size: 13px; }
+  .cases .grid-list .item {
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: rgba(40, 40, 40, 0.148) 4px 3px 4px 0px, var(--white) -5px -5px 16px 0px; }
+    .cases .grid-list .item .content {
+      padding: 10px 25px 22px 18px; }
+      .cases .grid-list .item .content .title {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15.23px;
+        letter-spacing: 0; }
+        .cases .grid-list .item .content .title span {
+          font-weight: 600; }
+      .cases .grid-list .item .content .text {
+        margin-top: 19px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px; }
+        .cases .grid-list .item .content .text span {
+          font-weight: 400;
+          font-size: 13px; }
 
 .members {
   margin-top: 120px; }
-  .members .grid-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 7.916%; }
-    .members .grid-list .item {
-      padding: 28px 35px 40px 30px;
-      border-radius: 16px;
-      box-shadow: rgba(40, 40, 40, 0.148) 4px 3px 4px 0px, var(--white) -5px -5px 16px 0px; }
-      .members .grid-list .item .profile-row {
+  .members .grid-list .item {
+    padding: 28px 35px 40px 30px;
+    border-radius: 16px;
+    box-shadow: rgba(40, 40, 40, 0.148) 4px 3px 4px 0px, var(--white) -5px -5px 16px 0px; }
+    .members .grid-list .item .profile-row {
+      display: flex;
+      align-items: center;
+      gap: 30px; }
+      .members .grid-list .item .profile-row .avatar {
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        width: 80px;
+        height: 80px; }
+      .members .grid-list .item .profile-row .information {
         display: flex;
-        align-items: center;
-        gap: 30px; }
-        .members .grid-list .item .profile-row .avatar {
-          border-radius: 50%;
-          overflow: hidden;
-          box-shadow: #ccdbe8 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-          width: 80px;
-          height: 80px; }
-        .members .grid-list .item .profile-row .information {
-          display: flex;
-          flex-direction: column;
-          justify-content: center; }
-          .members .grid-list .item .profile-row .information .position {
-            font-family: "Roboto", sans-serif;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 23.44px; }
-          .members .grid-list .item .profile-row .information .name {
-            font-family: "Inter", sans-serif;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 24.2px; }
-      .members .grid-list .item .description {
-        margin-top: 23px;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px; }
+        flex-direction: column;
+        justify-content: center; }
+        .members .grid-list .item .profile-row .information .position {
+          font-family: "Roboto", sans-serif;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 23.44px; }
+        .members .grid-list .item .profile-row .information .name {
+          font-family: "Inter", sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24.2px; }
+    .members .grid-list .item .description {
+      margin-top: 23px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px; }
 
 .news {
   margin-top: 120px; }
