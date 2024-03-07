@@ -19,8 +19,7 @@ body {
   font-family: "Noto Sans JP", sans-serif !important;
   font-weight: 400;
   color: #000000;
-  margin: 0;
-  line-height: 1; }
+  margin: 0; }
 
 .container-fluid {
   max-width: 1300px;
@@ -57,7 +56,8 @@ body {
   .main .container {
     max-width: 1200px;
     margin: 0 auto;
-    height: auto; }
+    height: auto;
+    padding-bottom: 20px; }
 
 .mission-and-business {
   display: grid;
@@ -368,12 +368,14 @@ body {
             color: var(--white-v2);
             border-radius: 50%;
             background: var(--black);
-            vertical-align: middle; }
+            vertical-align: middle;
+            line-height: 1; }
             .news .grid-list .item .content .link span a {
               font-weight: 200;
               font-size: 25px;
               color: inherit;
-              text-decoration: none; }
+              text-decoration: none;
+              line-height: 1; }
       .news .grid-list .item:first-of-type {
         grid-column-start: 1;
         grid-column-end: 4;
@@ -427,6 +429,21 @@ body {
               border-radius: 50%;
               background: var(--black);
               vertical-align: middle; }
+
+.about-us {
+  margin-top: 120px; }
+  .about-us .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10%; }
+    .about-us .content .left .item {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 10%;
+      align-items: center;
+      height: 82px;
+      border-bottom: 1px solid var(--black); }
 
 .img-fluid {
   width: 100%;

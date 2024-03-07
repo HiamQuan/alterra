@@ -34,7 +34,6 @@ body {
     font-weight: $fontNormal;
     color: $color;
     margin: 0;
-    line-height: 1;
 }
 
 .container-fluid {
@@ -81,6 +80,7 @@ body {
         max-width: 1200px;
         margin: 0 auto;
         height: auto;
+        padding-bottom: 20px;
     }
 }
 
@@ -431,11 +431,13 @@ body {
                         border-radius: 50%;
                         background: var(--black);
                         vertical-align: middle;
+                        line-height: 1;
                         a {
                             font-weight: 200;
                             font-size: 25px;
                             color: inherit;
                             text-decoration: none;
+                            line-height: 1;
                         }
                     }
                 }
@@ -498,9 +500,30 @@ body {
                             border-radius: 50%;
                             background: var(--black);
                             vertical-align: middle;
+                            
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.about-us {
+    margin-top: 120px;
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 10%;
+        .left {
+            .item {
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                gap: 10%;
+                align-items: center;
+                height: 82px;
+                border-bottom: 1px solid var(--black);
             }
         }
     }
